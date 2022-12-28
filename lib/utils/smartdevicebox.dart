@@ -22,7 +22,7 @@ class SmartDevices extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Container(
-        padding: EdgeInsets.symmetric(vertical: 12.0, horizontal: 10.0),
+        padding: const EdgeInsets.symmetric(vertical: 12.0, horizontal: 10.0),
         decoration: BoxDecoration(
             color: powerStatus ? Colors.black : Colors.white,
             borderRadius: BorderRadius.circular(15)),
@@ -40,7 +40,7 @@ class SmartDevices extends StatelessWidget {
               ],
             ),
 
-            SizedBox(height: 3,),
+            const SizedBox(height: 3,),
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [

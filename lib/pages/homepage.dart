@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:smarthome/comp/homedevices.dart';
 import 'package:smarthome/utils/mytabs.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -195,7 +194,7 @@ class _HomePageState extends State<HomePage> {
                   labelColor: Colors.black,
                 ),
 
-                Expanded(
+                const Expanded(
                   child: TabBarView(children: [
                     HomeDevices(),
                     HomeDevices(),

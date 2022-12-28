@@ -34,7 +34,7 @@ class _HomeDevicesState extends State<HomeDevices> {
     return Expanded(
         child: GridView.builder(
             itemCount: myDevices.length,
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,
               childAspectRatio: 2/1.6,
             ),
