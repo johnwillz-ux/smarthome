@@ -3,14 +3,12 @@ import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:smarthome/pages/homepage.dart';
 
-
-void main(){
+void main() {
   runApp(const MyApp());
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark.copyWith(
       statusBarColor: Colors.grey[400], // Color for Android
-      statusBarBrightness: Brightness.light // Dark status bar -- for IOS.
-  ));
-
+      statusBarBrightness: Brightness.dark // Dark status bar -- for IOS.
+      ));
 }
 
 class MyApp extends StatelessWidget {
@@ -18,20 +16,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
-    return  MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-
       home: const HomePage(),
       theme: ThemeData(
         primarySwatch: Colors.grey,
         textTheme: GoogleFonts.mavenProTextTheme(
           Theme.of(context).textTheme,
         ),
-
       ),
-
     );
   }
 }
-
