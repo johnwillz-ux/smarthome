@@ -6,7 +6,7 @@ class SmartDevices extends StatelessWidget {
   final String deviceInfo;
   final String iconPath;
   final bool powerStatus;
-  void Function (bool)? onChanged;
+  void Function(bool)? onChanged;
 
   SmartDevices(
       {Key? key,
@@ -35,27 +35,27 @@ class SmartDevices extends StatelessWidget {
                 Image.asset(
                   iconPath,
                   height: 25,
-                  color: powerStatus ? Colors.white: Colors.black,
+                  color: powerStatus ? Colors.white : Colors.black,
                 ),
               ],
             ),
-
-            const SizedBox(height: 3,),
+            const SizedBox(
+              height: 3,
+            ),
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   deviceName,
-                  style: TextStyle(fontWeight: FontWeight.w900,color: powerStatus ? Colors.white : Colors.black),
+                  style: TextStyle(
+                      fontWeight: FontWeight.w900,
+                      color: powerStatus ? Colors.white : Colors.black),
                 ),
-
               ],
             ),
-
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-
                 Text(
                   deviceInfo,
                   style: TextStyle(color: Colors.grey[600]),

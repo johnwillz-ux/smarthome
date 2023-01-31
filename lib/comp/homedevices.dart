@@ -26,9 +26,6 @@ class _HomeDevicesState extends State<HomeDevices> {
     });
   }
 
-
-
-
   @override
   Widget build(BuildContext context) {
     return Expanded(

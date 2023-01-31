@@ -10,7 +10,7 @@ class MyTab extends StatelessWidget {
   Widget build(BuildContext context) {
     return Tab(
       height: 80,
-      child: Text(inpuTex, style: TextStyle( fontWeight: FontWeight.bold, fontSize: 16),),
+      child: Text(inpuTex, style: const TextStyle( fontWeight: FontWeight.bold, fontSize: 16),),
     );
   }
 }
